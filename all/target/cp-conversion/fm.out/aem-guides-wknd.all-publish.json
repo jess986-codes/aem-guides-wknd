@@ -1,0 +1,21 @@
+{
+  "id":"com.adobe.aem.guides:aem-guides-wknd.all:slingosgifeature:publish:0.0.1-SNAPSHOT",
+  "configurations":  {
+    "com.adobe.cq.commerce.core.components.internal.services.UrlProviderImpl":    {
+      "productUrlTemplate":"{{page}}.{{url_key}}.html#{{variant_sku}}",
+      "productIdentifierLocation":"SELECTOR",
+      "productIdentifierType":"URL_KEY",
+      "categoryUrlTemplate":"{{page}}.{{id}}.html/{{url_path}}",
+      "categoryIdentifierLocation":"SELECTOR",
+      "categoryIdentifierType":"ID",
+      ":configurator:content-package-origins":"com.adobe.aem.guides:aem-guides-wknd.all:0.0.1-SNAPSHOT|com.adobe.aem.guides:aem-guides-wknd.ui.config:0.0.1-SNAPSHOT"
+    },
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/wknd/</",
+        "/:/"
+      ],
+      ":configurator:content-package-origins":"com.adobe.aem.guides:aem-guides-wknd.all:0.0.1-SNAPSHOT|com.adobe.aem.guides:aem-guides-wknd.ui.config:0.0.1-SNAPSHOT"
+    }
+  }
+}
